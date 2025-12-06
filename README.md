@@ -1,5 +1,5 @@
 # P2 - Linguagem de Programação Java  
-Projeto simples para adicionar, listar e deletar usuários no MongoDB.  
+Projeto simples para adicionar, deletar, atualizar e listar usuários numa tabela no MongoDB.  
 Projeto fullstack usando:  
 - JavaScript;  
 - Node.js;  
@@ -29,14 +29,18 @@ Comando:
 ![img1](Artefatos/comando.png)
 Site:  
 ![img2](Artefatos/site.png)  
-Teste:  
-![img3](Artefatos/teste.png)  
-Teste do Delete:  
-![img4](Artefatos/testedelete.png)  
-MongoDB (antes do Delete):  
-![img5](Artefatos/mongodb.png)  
-MongoDB (depois do Delete):  
-![img5](Artefatos/mongodbdelete.png)  
-Conclusão:  
-![img7](Artefatos/conclusao.png)
+Teste (POST):  
+![img3](Artefatos/testepost.png)  
+MongoDB:  
+![img4](Artefatos/mongopost.png)  
+Teste 2 (DELETE):  
+![img5](Artefatos/testedelete.png)  
+MongoDB:  
+![img6](Artefatos/mongodelete.png)  
+Teste 3 (PUT):  
+![img7](Artefatos/testeput.png)  
+MongoDB:  
+![img8](Artefatos/mongoput.png)  
+Conclusão (GET):  
+![img9](Artefatos/conclusao.png)
 

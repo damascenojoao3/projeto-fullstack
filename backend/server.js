@@ -21,6 +21,16 @@ const Usuario = mongoose.model('Usuario', UsuarioSchema);
 
 // API (endpoints)
 
+// rota para LISTAR usuários (GET)
+app.get('/usuarios', async (req, res) => {
+    try {
+        const usuarios = await Usuario.find();
+        res.json(usuarios);
+    } catch (error) {
+        res.status(500).json({ erro: error.message });
+    }
+});
+
 // rota para CRIAR um usuário (POST)
 app.post('/usuarios', async (req, res) => {
     try {
@@ -32,11 +42,21 @@ app.post('/usuarios', async (req, res) => {
     }
 });
 
-// rota para LISTAR usuários (GET)
-app.get('/usuarios', async (req, res) => {
+
+// rota para ATUALIZAR (PUT)
+app.put('/usuarios/:id', async (req, res) => {
     try {
-        const usuarios = await Usuario.find();
-        res.json(usuarios);
+        const { nome, email } = req.body;
+        
+        // findByIdAndUpdate(quem_atualizar, novos_dados, {new: true})
+        // O {new: true} serve para o Mongo devolver o usuário JÁ atualizado
+        const usuarioAtualizado = await Usuario.findByIdAndUpdate(
+            req.params.id,
+            { nome, email },
+            { new: true } 
+        );
+
+        res.json(usuarioAtualizado);
     } catch (error) {
         res.status(500).json({ erro: error.message });
     }
