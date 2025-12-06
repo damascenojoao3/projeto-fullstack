@@ -19,7 +19,7 @@ const UsuarioSchema = new mongoose.Schema({
 });
 const Usuario = mongoose.model('Usuario', UsuarioSchema);
 
-// rotas (endpoints)
+// API (endpoints)
 
 // rota para CRIAR um usuário (POST)
 app.post('/usuarios', async (req, res) => {
