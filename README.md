@@ -31,10 +31,10 @@ Site:
 ![img2](Artefatos/site.png)  
 Teste (print tirado depois):  
 ![img3](Artefatos/teste.png)  
-Teste do Delete:  
-![img4](Artefatos/testedelete.png)  
 MongoDB (antes do Delete):  
 ![img5](Artefatos/mongodb.png)  
+Teste do Delete:  
+![img4](Artefatos/testedelete.png)  
 MongoDB (depois do Delete):  
 ![img5](Artefatos/mongodbdelete.png)  
 Conclusão:  
