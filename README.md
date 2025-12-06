@@ -31,8 +31,12 @@ Site:
 ![img2](Artefatos/site.png)  
 Teste:  
 ![img3](Artefatos/teste.png)  
-MongoDB:  
-![img4](Artefatos/mongodb.png)  
+Teste do Delete:  
+![img4](Artefatos/testedelete.png)  
+MongoDB (antes do Delete):  
+![img5](Artefatos/mongodb.png)  
+MongoDB (depois do Delete):  
+![img5](Artefatos/mongodbdelete.png)  
 Conclusão:  
-![img5](Artefatos/conclusao.png)
+![img7](Artefatos/conclusao.png)
 
