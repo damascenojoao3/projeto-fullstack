@@ -42,6 +42,17 @@ app.get('/usuarios', async (req, res) => {
     }
 });
 
+// rota para DELETAR usuários (DELETE)
+app.delete('/usuarios/:id', async (req, res) => {
+    try {
+        // req.params.id pega o valor que veio na URL
+        await Usuario.findByIdAndDelete(req.params.id);
+        res.status(200).json({ mensagem: "Usuário deletado com sucesso!" });
+    } catch (error) {
+        res.status(500).json({ erro: error.message });
+    }
+});
+
 // roda o Servidor
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');

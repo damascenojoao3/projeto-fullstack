@@ -6,14 +6,31 @@ async function carregarUsuarios() {
     const usuarios = await resposta.json();
     
     const divLista = document.getElementById('lista');
-    divLista.innerHTML = ''; // limpa a lista antes de renderizar
+    divLista.innerHTML = ''; 
 
     usuarios.forEach(user => {
         const item = document.createElement('div');
         item.className = 'card';
-        item.innerText = `${user.nome} - ${user.email}`;
+        
+        item.innerHTML = `
+            <span>${user.nome} (${user.email})</span>
+            <button onclick="deletarUsuario('${user._id}')" style="color:red; margin-left:10px;">X</button>
+        `;
+        
         divLista.appendChild(item);
     });
+}
+
+// função para deletar dados (DELETE)
+async function deletarUsuario(id) {
+    if(confirm("Tem certeza que deseja excluir?")) {
+        await fetch(`${API_URL}/${id}`, {
+            method: 'DELETE',
+        });
+        
+        // Recarrega a lista para sumir com o item excluído
+        carregarUsuarios(); 
+    }
 }
 
 // função de enviar dados (POST)
