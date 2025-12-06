@@ -1,3 +1,5 @@
+require('dotenv').config();
+const express = require('express');
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -6,12 +8,10 @@ const app = express();
 app.use(express.json()); // permissão pra ler o json enviado pelo front
 app.use(cors()); // libera o acesso do front
 
-// conexão com o banco
-const mongoURI = 'mongodb+srv://dasmasceno3_db_user:SENHADB123@cluster0.bwacnua.mongodb.net/meuProjeto?retryWrites=true&w=majority';
-
-mongoose.connect(mongoURI)
-    .then(() => console.log("Conectado ao MongoDB"))
-    .catch(err => console.error("Erro ao conectar: ", err));
+// conecta sem expor as credenciais no código
+mongoose.connect(process.env.MONGO_URI)
+    .then(() => console.log("Conectado ao MongoDB!"))
+    .catch(err => console.error("Erro: ", err));
 
 // modelo
 const UsuarioSchema = new mongoose.Schema({
