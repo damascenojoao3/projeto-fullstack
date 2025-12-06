@@ -29,7 +29,7 @@ Comando:
 ![img1](Artefatos/comando.png)
 Site:  
 ![img2](Artefatos/site.png)  
-Teste:  
+Teste (print tirado depois):  
 ![img3](Artefatos/teste.png)  
 Teste do Delete:  
 ![img4](Artefatos/testedelete.png)  
