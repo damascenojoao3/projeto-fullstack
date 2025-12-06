@@ -15,7 +15,6 @@ async function carregarUsuarios() {
         item.className = 'card';
         
         // 2. DEPOIS define o que vai dentro (HTML com os dois botões)
-        // Note que passamos as aspas simples ' ' nos argumentos de texto
         item.innerHTML = `
             <span>${user.nome} (${user.email})</span>
             <div style="margin-top: 10px;">
@@ -24,7 +23,7 @@ async function carregarUsuarios() {
             </div>
         `;
         
-        // 3. POR FIM adiciona na lista
+        // 3. POR FIM, adiciona na lista
         divLista.appendChild(item);
     });
 }
@@ -36,7 +35,7 @@ async function deletarUsuario(id) {
             method: 'DELETE',
         });
         
-        // Recarrega a lista para sumir com o item excluído
+        // recarrega a lista para sumir com o item excluído
         carregarUsuarios(); 
     }
 }
