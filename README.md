@@ -1,4 +1,5 @@
 # P2 - Linguagem de Programação Java  
+Projeto simples para adicionar, listar e deletar usuários no MongoDB.  
 Projeto fullstack usando:  
 - JavaScript;  
 - Node.js;  
