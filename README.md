@@ -26,20 +26,20 @@ Para rodar o site, no terminal dentro de backend, basta digitar ```node server.j
 E estará funcionando.  
 # Artefatos  
 Comando:  
-![img1](Artefatos/comando.png)
+![img1](Artefatos/comando.png)  
 Site:  
 ![img2](Artefatos/site.png)  
 Teste (POST):  
 ![img3](Artefatos/testepost.png)  
-MongoDB:
+MongoDB:  
 ![img4](Artefatos/mongopost.png)  
 Teste 2 (DELETE):  
 ![img5](Artefatos/testedelete.png)  
-MongoDB:
+MongoDB:  
 ![img6](Artefatos/mongodelete.png)  
 Teste 3 (PUT):  
 ![img7](Artefatos/testeput.png)  
-MongoDB:
+MongoDB:  
 ![img8](Artefatos/mongoput.png)  
 Conclusão (GET):  
 ![img9](Artefatos/conclusao.png)  
